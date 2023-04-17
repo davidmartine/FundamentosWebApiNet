@@ -38,9 +38,8 @@ namespace WebApplicationAPI.Services
                 categoriaActual.Nombre = categoria.Nombre;
                 categoriaActual.Descripcion = categoria.Descripcion;
                 categoriaActual.Peso = categoria.Peso;
-
-                await tareaContext.SaveChangesAsync();
             }
+            await tareaContext.SaveChangesAsync();
         }
 
         public async Task Eliminar(Guid id)
@@ -52,6 +51,7 @@ namespace WebApplicationAPI.Services
                 tareaContext.Remove(categoriaActual);
                 await tareaContext.SaveChangesAsync();
             }
+            
         }
     }
 }

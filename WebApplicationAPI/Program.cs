@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // ------> CONEXION CON ENTITY FRAMEWORK <-------
-builder.Services.AddSqlServer<TareaContext>("Data Source=JUAND; Initial Catalog=TareasApi; Integrated Security=True; Encrypt=false; TrustServerCertificate=True;");
+builder.Services.AddSqlServer<TareaContext>("Data Source=TIAUX02\\SQLEXPRESS; Initial Catalog=TareasApi; Integrated Security=True; Encrypt=false; TrustServerCertificate=True;");
 
 //INYECCION DE DEPENDENCIAS 
 //builder.Services.AddScoped<IHolaMundoService, HolaMundoService>();

@@ -29,7 +29,7 @@ namespace WebApplicationAPI
             });   
 
 
-            //MANEJO DE FULENT API CREACION DE TABLA
+            //MANEJO DE FLUENT API CREACION DE TABLA
             modelBuilder.Entity<Categoria>(categoria =>
             {
                 categoria.ToTable("Categoria");
@@ -61,7 +61,7 @@ namespace WebApplicationAPI
                 FechaCreacion = DateTime.Now
 
             });
-            //MANEJO DE FULENT API CREACION DE TABLA
+            //MANEJO DE FLUENT API CREACION DE TABLA
             modelBuilder.Entity<Tarea>(tarea =>
             {
                 tarea.ToTable("Tarea");
